@@ -11,5 +11,5 @@ RUN rpm -Uhv https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-
 COPY extra-packages /
 RUN rpm-ostree install -y $(< extra-packages) && \
     rm /var/lib/unbound/root.key && \
-    ostree container commit && \
-    rm /extra-packages
+    rm /extra-packages && \
+    ostree container commit 
