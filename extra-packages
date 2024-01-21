@@ -9,3 +9,4 @@ make
 direnv
 pass
 passmenu
+openssl
