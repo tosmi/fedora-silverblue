@@ -1,4 +1,7 @@
-FROM quay.io/fedora/fedora-silverblue:39
+FROM quay.io/fedora-ostree-desktops/silverblue:39
+
+# this stopped to be updated
+# quay.io/fedora/fedora-silverblue:39
 
 ENV VERSION=39
 
