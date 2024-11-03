@@ -11,7 +11,7 @@ libvirt-daemon-kvm
 lm_sensors
 make
 mozilla-openh264
-neofetch
+fastfetch
 openssl
 pass
 passmenu
