@@ -1,6 +1,6 @@
-FROM quay.io/fedora-ostree-desktops/silverblue:41
+FROM quay.io/fedora-ostree-desktops/silverblue:42
 
-ENV VERSION=41
+ENV VERSION=42
 
 LABEL summary="Customized Fedora Silverblue containerized ostree image" \
       maintainer="Toni Schmidbauer <toni@stderr.at>"
