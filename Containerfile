@@ -21,4 +21,5 @@ RUN rpm -Uhv https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-
     rpm -e --nodeps noopenh264 && \
     rpm-ostree install -y $(< extra-packages) && \
     rm /extra-packages && \
+    mkdir /nix && \
     ostree container commit
