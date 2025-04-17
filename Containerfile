@@ -22,5 +22,7 @@ RUN (cd /etc/yum.repos.d; curl -LO https://repo.ivpn.net/stable/fedora/generic/i
     rpm -e --nodeps noopenh264 && \
     rpm-ostree install -y $(< extra-packages) && \
     rm /extra-packages && \
+    dnf install @cosmic-desktop-environment && \
+    dnf clean all && \
     mkdir /nix && \
     ostree container commit
