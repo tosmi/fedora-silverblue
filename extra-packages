@@ -20,5 +20,5 @@ rpi-imager
 tcpdump
 tmux
 virt-manager
-webkit2gtk4.0
 yaml-cpp
+webkit2gtk4.1
