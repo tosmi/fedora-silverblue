@@ -23,3 +23,6 @@ tmux
 virt-manager
 yaml-cpp
 webkit2gtk4.1
+libguestfs
+libguestfs-rescue
+virt-install
