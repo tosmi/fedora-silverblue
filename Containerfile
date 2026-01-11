@@ -8,7 +8,7 @@ LABEL summary="Customized Fedora Silverblue containerized ostree image" \
 COPY extra-packages /
 
 # install cursor 2.0
-RUN curl -Lo /tmp/cursor.rpm https://api2.cursor.sh/updates/download/golden/linux-x64-rpm/cursor/2.2 && \
+RUN curl -Lo /tmp/cursor.rpm https://api2.cursor.sh/updates/download/golden/linux-x64-rpm/cursor/2.3 && \
     dnf install -y /tmp/cursor.rpm && \
     rm -f /tmp/cursor.rpm
 
