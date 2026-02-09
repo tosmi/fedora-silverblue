@@ -12,6 +12,11 @@ RUN curl -Lo /tmp/cursor.rpm https://api2.cursor.sh/updates/download/golden/linu
     dnf install -y /tmp/cursor.rpm && \
     rm -f /tmp/cursor.rpm
 
+# install vscode
+RUN rpm --import https://packages.microsoft.com/keys/microsoft.asc && \
+    echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\nautorefresh=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo && \
+    dnf install -y code
+
 RUN (cd /etc/yum.repos.d; curl -LO https://repo.ivpn.net/stable/fedora/generic/ivpn.repo) && \
     (cd /etc/yum.repos.d; curl -LO https://pkgs.tailscale.com/stable/fedora/tailscale.repo) && \
     rpm -Uhv https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-${VERSION}.noarch.rpm && \
